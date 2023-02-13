@@ -1,5 +1,11 @@
 body, html{
     background-color: bisque;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    text-align: center;
+    font-weight: 500px;
 }
 .socialicon{
     width:3em;
