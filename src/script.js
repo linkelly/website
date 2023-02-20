@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { Color } from 'three';
+import { BooleanKeyframeTrack, Color } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 /**
@@ -21,9 +21,8 @@ scene.background = new THREE.Color( 'bisque' );
  * Object
  */
 const geometry = new THREE.IcosahedronGeometry( 4, 20 );
-const material = new THREE.MeshNormalMaterial({
-    wireframe: true
-})
+// const material = new THREE.MeshNormalMaterial({ wireframe: true })
+const material = new THREE.MeshBasicMaterial( { color: '#7BA05B', wireframe: true } );
 material.side = THREE.DoubleSide
 const mesh = new THREE.Mesh(geometry, material)
 const mesh2 = new THREE.Mesh(geometry, material)
