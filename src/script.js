@@ -28,6 +28,7 @@ const mesh = new THREE.Mesh(geometry, material)
 const mesh2 = new THREE.Mesh(geometry, material)
 mesh2.rotation.x += Math.PI / 2
 scene.add(mesh)
+
 scene.add(mesh2)
 
 /**
